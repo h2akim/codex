@@ -71,8 +71,6 @@ abstract class Client implements Contracts\Client
 
     /**
      * Get API endpoint URL.
-     *
-     * @return string
      */
     public function getApiEndpoint(): ?string
     {
@@ -91,7 +89,6 @@ abstract class Client implements Contracts\Client
      * Get versioned resource (service).
      *
      *
-     * @return \Laravie\Codex\Contracts\Request
      *
      * @throws \InvalidArgumentException
      */
@@ -115,9 +112,6 @@ abstract class Client implements Contracts\Client
 
     /**
      * Handle uses using via.
-     *
-     * @param  \Laravie\Codex\Contracts\Request  $request
-     * @return \Laravie\Codex\Contracts\Request
      */
     public function via(Contracts\Request $request): Contracts\Request
     {

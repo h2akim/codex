@@ -42,7 +42,6 @@ abstract class Request extends Common\Request
      * @param  \Laravie\Codex\Contracts\Endpoint|string  $path
      * @param  array<string, mixed>  $headers
      * @param  \Psr\Http\Message\StreamInterface|\Laravie\Codex\Common\Payload|array|null  $body
-     * @return \Laravie\Codex\Contracts\Response
      */
     protected function send(string $method, $path, array $headers = [], $body = []): Contracts\Response
     {
@@ -64,9 +63,6 @@ abstract class Request extends Common\Request
 
     /**
      * Resolve the responder class.
-     *
-     *
-     * @return \Laravie\Codex\Contracts\Response
      */
     protected function responseWith(ResponseInterface $message): Contracts\Response
     {
@@ -114,7 +110,6 @@ abstract class Request extends Common\Request
      * Get API Endpoint.
      *
      * @param  array<int, string>|string  $path
-     * @return \Laravie\Codex\Contracts\Endpoint
      */
     protected function getApiEndpoint($path = []): Contracts\Endpoint
     {
