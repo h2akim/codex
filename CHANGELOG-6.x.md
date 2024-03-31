@@ -2,6 +2,14 @@
 
 This changelog references the relevant changes (bug and security fixes) done to `laravie/codex`.
 
+## 6.2.0
+
+Released: 2024-03-31
+
+### Added
+
+* Added support for PHP 8.3.
+
 ## 6.1.0
 
 Released: 2023-07-10
